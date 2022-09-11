@@ -21,7 +21,7 @@ h1 {
    margin-bottom: 16px;
 }
 
-header a{
+a{
    font-weight: 600;
    text-decoration: none;
    color: #888;
@@ -29,7 +29,7 @@ header a{
    transition: all ease-in-out .14s;
 }
 
-header a:hover{
+a:hover{
    transform: scale(1.1);
    box-shadow: 0 2px 0 0 rgb(112, 112, 112);
 }
@@ -60,16 +60,18 @@ input {
    font-size: 15px;
    margin: 10px 0;
    font-weight: 600;
-   border: 1px solid #888 ;
+   border: 1px solid black ;
 }
 
 button {
-   padding: 10px;
-   border-radius: 18px;
+   padding: 13px 15px;
+   border-radius: 28px;
    background-color: #333;
    color: white;
    font-size: 15px;
+   font-weight: 600;
    cursor: pointer;
+   border: 1px solid black ;
    transition: background-color .2s;
 }
 
@@ -78,12 +80,7 @@ button:hover {
    color: black;
 }
 
-#p1 {
-   font-size: 19px;
-   font-weight: 600;
-}
-
-#p2 {
+p {
    font-size: 19px;
    font-weight: 600;
 }
