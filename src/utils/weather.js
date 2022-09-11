@@ -19,6 +19,7 @@ const getweather = (address, callback) => {
 				Weather: `${body.current.weather_descriptions[0]}.\n
 							Temp is ${body.current.temperature}℃, feels like ${body.current.feelslike}℃.\n
 							Current Humidity is ${body.current.humidity}.`,
+				Weather_icon: body.current.weather_icons[0],
 			});
 		}
 	});

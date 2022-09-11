@@ -1,7 +1,7 @@
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
-const getweather = require("./utils/weather");
+const getWeather = require("./utils/weather");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -43,7 +43,7 @@ app.get("/weather", (req, res) => {
 			error: "Address Not Provided",
 		});
 	}
-	getweather(req.query.address, (error, data) => {
+	getWeather(req.query.address, (error, data) => {
 		if (error) {
 			return res.send({
 				error,
@@ -52,6 +52,7 @@ app.get("/weather", (req, res) => {
 		res.send({
 			Location: data.Location,
 			Weather: data.Weather,
+			Icon: data.Weather_icon,
 		});
 	});
 });
